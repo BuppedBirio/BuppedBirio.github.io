@@ -6,6 +6,9 @@ h1 {
     color: white;
     text-align: center;
 }
+h3 {
+    color: white;
+}
 a:link {
     color: greenyellow;
 }
