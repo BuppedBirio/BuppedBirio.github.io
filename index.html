@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,28 +25,69 @@
     <meta property="og:image:height"content="320">
     <meta property="og:locale"      content="en_GB">
     <meta property="og:site_name"   content="BuppedBirio">
+
+    <script src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>Main page</h1>
+    <h1>BuppedBirio</h1>
     
+    <noscript>
+        <style> .script { visibility: hidden; } </style>
+    </noscript>
+
+    <details class="script">
+        <summary>
+            <span lang="en">Language</span>
+            <span lang="it">Lingua</span>
+        </summary>
+        
+        <span lang="en">Selected: </span>
+        <span lang="it">Selezionata: </span>
+
+        <select id="lang-switch">
+            <option value="en" selected>English</option>
+            <option value="it">Italiano</option>
+        </select>
+    </details>
+
     <h3>Projects:</h3>
     <details>
         <summary>PinoBlu</summary>
         <i>
-        type: Game<br>
-        more information: 2D, arcade, single-player<br>
+            <span lang="en">
+            type: videogame<br>
+            more information: 2D, arcade, single-player<br>
+            price: free<br>
+            </span>
+            <span lang="it">
+            type: videogioco<br>
+            maggiori informazioni: 2D, arcade, single-player<br>
+            prezzo: gratuito<br>
+            </span>
         </i>
-        <a href="https://buppedbirio.itch.io/pinoblu">Try it</a>
+        <a href="https://buppedbirio.itch.io/pinoblu">
+            <span lang="en">Try it</span>
+            <span lang="it">Provalo</span>
+        </a>
     </details>
 
     <hr>
     <footer>
         <address>
-            Made by <a href="mailto:rfmariano@protonmail.com">Mariano</a>.<br>
-            More projects on <a href="https://github.com/BuppedBirio/BuppedBirio.github.io">GitHub</a>.<br>
-            Youtube channel of <a href="https://www.youtube.com/c/JustTechh">JustTech</a>.<br>
-            For everything <a href="buppedbirio@gmail.com">send an email</a>!<br>
+            <span lang="en">
+                Made by <a href="mailto:rfmariano@protonmail.com">Mariano</a>.<br>
+                Codes on <a href="https://github.com/BuppedBirio/BuppedBirio.github.io">GitHub</a>.<br>
+                Youtube channel of <a href="https://www.youtube.com/c/JustTechh">JustTech</a>.<br>
+                For everything <a href="buppedbirio@gmail.com">send an email</a>!<br>
+            </span>
+            <span lang="it">
+                Fatto da <a href="mailto:rfmariano@protonmail.com">Mariano</a>.<br>
+                Codici su <a href="https://github.com/BuppedBirio/BuppedBirio.github.io">GitHub</a>.<br>
+                Canale youtube di <a href="https://www.youtube.com/c/JustTechh">JustTech</a>.<br>
+                Per qualsiasi cosa <a href="buppedbirio@gmail.com">send an email</a>!<br>
+            </span>
         </address>
     </footer>
 </body>
+<script src="language.js"></script>
 </html>
